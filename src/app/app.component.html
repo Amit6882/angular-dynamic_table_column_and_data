@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<table>
+  <thead>
+    <th *ngFor="let key of userKeys">{{key}}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userLists">
+      <td *ngFor="let key of userKeys">{{user[key]}}</td>
+    </tr>
+  </tbody>
+</table>
